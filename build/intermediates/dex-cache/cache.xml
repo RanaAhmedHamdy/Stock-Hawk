@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="fc25176ff47c2919378a90b1cef4e3b469698594">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f05f36909f36c7dfbe017eab400c495a980ff0cb\classes.dex" />
+    </item>
+
+</items>

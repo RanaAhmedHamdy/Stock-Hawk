@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">الاسهم</string>
+    <string name="A11_search_btn">بحث</string>
+    <string name="action_settings">الاعادادات</string>
+    <string name="network_toast">لا يوجد اتصال بالانترنت</string>
+    <string name="action_change_units">تغيير الوحدات</string>
+</resources>
