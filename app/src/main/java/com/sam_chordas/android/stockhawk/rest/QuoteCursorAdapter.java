@@ -49,7 +49,7 @@ public class QuoteCursorAdapter extends CursorRecyclerViewAdapter<QuoteCursorAda
       viewHolder.symbol.setContentDescription(cursor.getString(cursor.getColumnIndex(QuoteColumns.SYMBOL)));
 
       viewHolder.bidPrice.setText(cursor.getString(cursor.getColumnIndex(QuoteColumns.BIDPRICE)));
-    viewHolder.bidPrice.setContentDescription(mContext.getString(R.string.a11y_bid, cursor.getString(cursor.getColumnIndex("bid_price"))));
+    viewHolder.bidPrice.setContentDescription(mContext.getString(R.string.a11y_bid, cursor.getString(cursor.getColumnIndex(QuoteColumns.BIDPRICE))));
 
     int sdk = Build.VERSION.SDK_INT;
       if (cursor.getInt(cursor.getColumnIndex(QuoteColumns.ISUP)) == 1) {

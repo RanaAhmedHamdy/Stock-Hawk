@@ -4,7 +4,6 @@ import android.content.ContentProviderOperation;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.util.Log;
 
 import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.data.QuoteColumns;
@@ -55,7 +54,6 @@ public class Utils {
                 }
             }
         } catch (JSONException e) {
-            Log.e(LOG_TAG, "String to JSON failed: " + e);
         }
         return batchOperations;
     }
@@ -104,7 +102,6 @@ public class Utils {
                     builder.withValue(QuoteColumns.ISUP, 1);
                 }
             } else {
-                Log.i("error", "invalid request");
                 return null;
             }
         } catch (JSONException e) {
@@ -146,7 +143,6 @@ public class Utils {
                 }
             }
         } catch (JSONException e) {
-            Log.e(LOG_TAG, "String to JSON failed: " + e);
         }
         return historicalData;
     }

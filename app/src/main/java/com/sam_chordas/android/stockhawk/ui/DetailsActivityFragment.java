@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -83,7 +82,6 @@ public class DetailsActivityFragment extends Fragment {
 
             if (urlStringBuilder != null) {
                 urlString = urlStringBuilder.toString();
-                Log.i("search url", urlString);
                 try {
                     getResponse = fetchData(urlString);
                     return Utils.getHistoricalData(getResponse);
@@ -111,12 +109,12 @@ public class DetailsActivityFragment extends Fragment {
 
             LineSet dataset = new LineSet(labelArr, highArr);
 
-            dataset.setColor(Color.parseColor("#FF00BF"))
-                    .setDotsColor(Color.parseColor("#FF00BF"))
+            dataset.setColor(Color.parseColor(String.valueOf(R.color.pink)))
+                    .setDotsColor(Color.parseColor(String.valueOf(R.color.pink)))
                     .setThickness(4);
 
             Paint gridPaint = new Paint();
-            gridPaint.setColor(Color.parseColor("#FFFFFF"));
+            gridPaint.setColor(Color.parseColor(String.valueOf(R.color.white)));
             gridPaint.setStyle(Paint.Style.FILL);
             gridPaint.setAntiAlias(true);
             gridPaint.setStrokeWidth(Tools.fromDpToPx(.1f));
@@ -124,7 +122,7 @@ public class DetailsActivityFragment extends Fragment {
             lineChartView
                     .setGrid(ChartView.GridType.FULL, gridPaint)
                     .setAxisBorderValues(Collections.min(high).intValue(), Collections.max(high).intValue() + 1)
-                    .setLabelsColor(Color.parseColor("#FFFFFF"))
+                    .setLabelsColor(Color.parseColor(String.valueOf(R.color.white)))
                     .setYLabels(AxisController.LabelPosition.OUTSIDE);
 
             lineChartView.addData(dataset);

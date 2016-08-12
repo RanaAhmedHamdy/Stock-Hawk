@@ -137,7 +137,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
                                             new String[]{input.toString()}, null);
                                     if (c.getCount() != 0) {
                                         Toast toast =
-                                                Toast.makeText(MyStocksActivity.this, "This stock is already saved!",
+                                                Toast.makeText(MyStocksActivity.this, getString(R.string.already_saved),
                                                         Toast.LENGTH_LONG);
                                         toast.setGravity(Gravity.CENTER, Gravity.CENTER, 0);
                                         toast.show();
@@ -256,7 +256,7 @@ public class MyStocksActivity extends AppCompatActivity implements LoaderManager
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         if (key.equals(getString(R.string.pre_request_status)))
-            Toast.makeText(getBaseContext(), "Invalid request", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getBaseContext(), getString(R.string.invalid), Toast.LENGTH_SHORT).show();
     }
 
     @Override
