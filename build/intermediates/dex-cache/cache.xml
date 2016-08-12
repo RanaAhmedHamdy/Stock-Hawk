@@ -1,3 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Program Files (x86)\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_4d53806161c963d7085817c3ae8dd70af34d0268\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\me.zhanghai.android.materialprogressbar\library\1.1.5\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4a9f97c742d058ca55948643c06f447895a9af76">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.zhanghai.android.materialprogressbar-library-1.1.5_e9a91678d83c5082a69ed0ca591aeb7dfdf15b48\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_bb8b558517dcb8d218810515da80994aa1126295\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.github.afollestad.material-dialogs\core\0.8.5.7\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="a94e3ac390a37f149a235f7f5e1b49b65151c0bf">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.afollestad.material-dialogs-core-0.8.5.7_9ea25be7492599a4ec262a3bbaf4683e5500ca15\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Rana\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_25098444dc18b50169c777f779feb7822365f932\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.melnykov\floatingactionbutton\1.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="65620ba5e576dcec2c86efa440b00d042a27383b">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.melnykov-floatingactionbutton-1.2.0_2695a70c896fcc351ad671a5d31ce1dd738d51d3\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="6b50479fc919cdc59b06f48874d86537b6c19ade">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_19a3fc097c8901509c510591aac1d2fca215554e\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.2.1_b727e0545b852823ffd70d6d685158895f64b1a3\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.2.1_70d1ff14f86b43b700394a0471281cfc00ce2121\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="24e0690ff4b2d944ae59b08cf92a4ee372ca67c2">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f05f36909f36c7dfbe017eab400c495a980ff0cb\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_bffc4b8c8b5432a2185478ad87a40ebda0412f73\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_af437dbbc3bfa0ff8f7195bf08cf21ed1b145725\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Rana\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_ab42e82069b36dc422a8a0b1346aee6c7de9fa9f\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\net.simonvt.schematic\schematic\0.6.3\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="f6f5730f19d22f177096c8d134d4892b0fbd631d">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\net.simonvt.schematic-schematic-0.6.3_ea570aaa561ca4d0c5ba43f23365b34090997d7a\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_360f0373b63b1d0d500f1d1dd089f064337fabfa\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.2.1_8819358da4f42c596e0deea7e2fb541fc4fc39e0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Rana\.gradle\caches\modules-2\files-2.1\net.simonvt.schematic\schematic-annotations\0.6.3\4df5a4bbbacf9ea3c4aebf7d3c61465afb648e36\schematic-annotations-0.6.3.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4df5a4bbbacf9ea3c4aebf7d3c61465afb648e36">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\schematic-annotations-0.6.3_9da0e30d6a30396de3fe200811bb296a951c5864\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.diogobernardino\williamchart\2.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1f159979917aba68421fb945854049367d206410">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.diogobernardino-williamchart-2.2_08f131d148541addc1236958b8f0ac9ca29801d9\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.1.1_55b951093a72675a3e006f6d2c158b627a5014da\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.2.1_8f04427b81547c06f2d631363aa342fd760fc2ba\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.2.1_f82d1bcf31c798659403cb290c6e583d0d1bf342\classes.dex" />
+    </item>
+    <item
+        jar="D:\android_studio_projects\StockHawk\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.2.1_ad999bdedb704a07f085aa27cd5dc63926cf059a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Rana\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.5.0\4de2b4ed3445c37ec1720a7d214712e845a24636\okhttp-2.5.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="D:\android_studio_projects\StockHawk\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.5.0_3a34307ecb445961f246ea0b0eeb1bbfb186a396\classes.dex" />
+    </item>
+
+</items>
