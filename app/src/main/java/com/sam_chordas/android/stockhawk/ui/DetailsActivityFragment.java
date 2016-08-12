@@ -1,10 +1,10 @@
 package com.sam_chordas.android.stockhawk.ui;
 
 import android.app.Fragment;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -109,12 +109,12 @@ public class DetailsActivityFragment extends Fragment {
 
             LineSet dataset = new LineSet(labelArr, highArr);
 
-            dataset.setColor(Color.parseColor(String.valueOf(R.color.pink)))
-                    .setDotsColor(Color.parseColor(String.valueOf(R.color.pink)))
+            dataset.setColor(ContextCompat.getColor(getActivity(), R.color.pink))
+                    .setDotsColor(ContextCompat.getColor(getActivity(), R.color.pink))
                     .setThickness(4);
 
             Paint gridPaint = new Paint();
-            gridPaint.setColor(Color.parseColor(String.valueOf(R.color.white)));
+            gridPaint.setColor(ContextCompat.getColor(getActivity(), R.color.white));
             gridPaint.setStyle(Paint.Style.FILL);
             gridPaint.setAntiAlias(true);
             gridPaint.setStrokeWidth(Tools.fromDpToPx(.1f));
@@ -122,7 +122,7 @@ public class DetailsActivityFragment extends Fragment {
             lineChartView
                     .setGrid(ChartView.GridType.FULL, gridPaint)
                     .setAxisBorderValues(Collections.min(high).intValue(), Collections.max(high).intValue() + 1)
-                    .setLabelsColor(Color.parseColor(String.valueOf(R.color.white)))
+                    .setLabelsColor(ContextCompat.getColor(getActivity(), R.color.white))
                     .setYLabels(AxisController.LabelPosition.OUTSIDE);
 
             lineChartView.addData(dataset);

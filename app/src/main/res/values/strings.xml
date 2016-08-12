@@ -17,4 +17,5 @@
   <string name="pre_request_status" translatable="false">Request Status</string>
   <string name="already_saved">This stock is already saved!</string>
   <string name="invalid">Invalid request</string>
+    <string name="empty_list">empty list</string>
 </resources>
