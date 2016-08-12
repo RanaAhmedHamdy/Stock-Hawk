@@ -45,14 +45,14 @@ public class QuoteCursorAdapter extends CursorRecyclerViewAdapter<QuoteCursorAda
 
   @Override
   public void onBindViewHolder(final ViewHolder viewHolder, final Cursor cursor){
-    viewHolder.symbol.setText(cursor.getString(cursor.getColumnIndex("symbol")));
-    viewHolder.symbol.setContentDescription(cursor.getString(cursor.getColumnIndex("symbol")));
+      viewHolder.symbol.setText(cursor.getString(cursor.getColumnIndex(QuoteColumns.SYMBOL)));
+      viewHolder.symbol.setContentDescription(cursor.getString(cursor.getColumnIndex(QuoteColumns.SYMBOL)));
 
-    viewHolder.bidPrice.setText(cursor.getString(cursor.getColumnIndex("bid_price")));
+      viewHolder.bidPrice.setText(cursor.getString(cursor.getColumnIndex(QuoteColumns.BIDPRICE)));
     viewHolder.bidPrice.setContentDescription(mContext.getString(R.string.a11y_bid, cursor.getString(cursor.getColumnIndex("bid_price"))));
 
     int sdk = Build.VERSION.SDK_INT;
-    if (cursor.getInt(cursor.getColumnIndex("is_up")) == 1){
+      if (cursor.getInt(cursor.getColumnIndex(QuoteColumns.ISUP)) == 1) {
       if (sdk < Build.VERSION_CODES.JELLY_BEAN){
         viewHolder.change.setBackgroundDrawable(
             mContext.getResources().getDrawable(R.drawable.percent_change_pill_green));
@@ -70,11 +70,11 @@ public class QuoteCursorAdapter extends CursorRecyclerViewAdapter<QuoteCursorAda
       }
     }
     if (Utils.showPercent){
-      viewHolder.change.setText(cursor.getString(cursor.getColumnIndex("percent_change")));
-      viewHolder.change.setContentDescription(cursor.getString(cursor.getColumnIndex("percent_change")));
+        viewHolder.change.setText(cursor.getString(cursor.getColumnIndex(QuoteColumns.PERCENT_CHANGE)));
+        viewHolder.change.setContentDescription(cursor.getString(cursor.getColumnIndex(QuoteColumns.PERCENT_CHANGE)));
     } else{
-      viewHolder.change.setText(cursor.getString(cursor.getColumnIndex("change")));
-      viewHolder.change.setContentDescription(cursor.getString(cursor.getColumnIndex("change")));
+        viewHolder.change.setText(cursor.getString(cursor.getColumnIndex(QuoteColumns.CHANGE)));
+        viewHolder.change.setContentDescription(cursor.getString(cursor.getColumnIndex(QuoteColumns.CHANGE)));
     }
   }
 

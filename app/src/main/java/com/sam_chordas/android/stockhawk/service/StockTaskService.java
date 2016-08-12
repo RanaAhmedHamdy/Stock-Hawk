@@ -54,6 +54,7 @@ public class StockTaskService extends GcmTaskService{
 
   @Override
   public int onRunTask(TaskParams params) {
+      tag = params.getTag();
       Cursor initQueryCursor;
       if (mContext == null) {
           mContext = this;
@@ -67,7 +68,7 @@ public class StockTaskService extends GcmTaskService{
       } catch (UnsupportedEncodingException e) {
           e.printStackTrace();
       }
-      if (params.getTag().equals("init") || params.getTag().equals("periodic")) {
+      if (tag.equals("init") || tag.equals("periodic")) {
           isUpdate = true;
           initQueryCursor = mContext.getContentResolver().query(QuoteProvider.Quotes.CONTENT_URI,
                   new String[]{"Distinct " + QuoteColumns.SYMBOL}, null,
@@ -95,7 +96,7 @@ public class StockTaskService extends GcmTaskService{
                   e.printStackTrace();
               }
           }
-      } else if (params.getTag().equals("add")) {
+      } else if (tag.equals("add")) {
           isUpdate = false;
           // get symbol from params.getExtra and build query
           String stockInput = params.getExtras().getString("symbol");
@@ -104,13 +105,6 @@ public class StockTaskService extends GcmTaskService{
           } catch (UnsupportedEncodingException e) {
               e.printStackTrace();
           }
-      } else if (params.getTag().equals("historical")) {
-          Log.e("Historical Data", "true");
-          urlStringBuilder.append("https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.historicaldata%20where%20symbol%20%3D%20%22" +
-                  params.getExtras().get("name") + "%22%20and%20startDate%20%3D%20%22" +
-                  params.getExtras().get("weekbef") + "%22%20and%20endDate%20%3D%20%22" +
-                  params.getExtras().get("currdate") + "%22");
-          tag = params.getTag();
       }
 
     // finalize the URL for the API query.
@@ -127,7 +121,6 @@ public class StockTaskService extends GcmTaskService{
       try{
         getResponse = fetchData(urlString);
         result = GcmNetworkManager.RESULT_SUCCESS;
-          //if(tag.equals("init") || tag.equals("periodic") || tag.equals("add")) {
               try {
                   ContentValues contentValues = new ContentValues();
                   // update ISCURRENT to 0 (false) so new data is current
@@ -147,9 +140,6 @@ public class StockTaskService extends GcmTaskService{
               } catch (RemoteException | OperationApplicationException e) {
                   Log.e(LOG_TAG, "Error applying batch insert", e);
               }
-         /* } else{
-              //TODO : Fetch historical data from Yahoo
-          }*/
       } catch (IOException e){
         e.printStackTrace();
       }
